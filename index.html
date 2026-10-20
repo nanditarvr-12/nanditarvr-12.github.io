@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of a Biotechnology undergraduate student.">
+  <title>Nandita Raveendran | Biotechnology Portfolio</title>
+  <style>
+    :root {
+      --navy: #17324d;
+      --blue: #326b83;
+      --teal: #7fb7ad;
+      --cream: #f7f7f2;
+      --ink: #1f2933;
+      --muted: #5d6b75;
+      --white: #ffffff;
+      --line: #dfe6e5;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream); color: var(--ink); line-height: 1.65;
+    }
+    a { color: var(--blue); }
+    .wrap { width: min(1080px, 90%); margin: 0 auto; }
+    header { background: var(--white); border-bottom: 1px solid var(--line); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 18px 0; }
+    .brand { font-weight: 800; color: var(--navy); letter-spacing: .2px; }
+    nav ul { display: flex; gap: 20px; flex-wrap: wrap; list-style: none; padding: 0; margin: 0; }
+    nav a { text-decoration: none; font-size: .94rem; font-weight: 600; }
+    .hero { padding: 76px 0 68px; background: linear-gradient(120deg, #e9f2ef, #f7f7f2 65%); }
+    .eyebrow { color: var(--blue); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: .78rem; }
+    h1 { font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 1.08; letter-spacing: -1.5px; color: var(--navy); margin: 14px 0 20px; }
+    .hero p { max-width: 690px; font-size: 1.12rem; color: #40515e; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn { display: inline-block; padding: 11px 17px; border-radius: 7px; text-decoration: none; font-weight: 700; border: 1px solid var(--navy); }
+    .primary { background: var(--navy); color: var(--white); }
+    .secondary { color: var(--navy); background: transparent; }
+    section { padding: 58px 0; }
+    section:nth-of-type(even) { background: var(--white); }
+    h2 { color: var(--navy); font-size: 1.9rem; margin: 0 0 8px; }
+    .intro { color: var(--muted); margin: 0 0 28px; max-width: 720px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+    section:nth-of-type(even) .card { background: var(--cream); }
+    .card h3 { color: var(--navy); margin: 0 0 8px; }
+    .card p { margin: 0 0 12px; color: #485761; }
+    .tag { display: inline-block; font-size: .82rem; background: #e4efed; color: #214f5b; padding: 4px 9px; border-radius: 20px; margin: 4px 4px 0 0; }
+    .timeline { border-left: 3px solid var(--teal); padding-left: 20px; }
+    .timeline-item { margin: 0 0 22px; }
+    .timeline-item h3 { margin: 0; color: var(--navy); }
+    .timeline-item p { margin: 4px 0 0; color: var(--muted); }
+    .contact-box { background: var(--navy); color: var(--white); border-radius: 14px; padding: 28px; }
+    .contact-box h2 { color: var(--white); }
+    .contact-box p { color: #e1e9ef; }
+    .contact-box a { color: #b9e5dc; }
+    footer { padding: 24px 0; text-align: center; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 650px) {
+      nav { align-items: flex-start; flex-direction: column; }
+      nav ul { gap: 12px; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 54px 0; }
+      section { padding: 44px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Main navigation">
+        <div class="brand">NANDITA RAVEENDRAN</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#development">Development</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Biotechnology Undergraduate · Professional Portfolio</div>
+        <h1>Science, technology<br>and meaningful impact.</h1>
+        <p>
+          Hello, I'm Nandita, a BTech Biotechnology student interested in exploring
+          how scientific research and technology can contribute to healthcare,
+          industrial innovation and environmental sustainability.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore my work</a>
+          <a class="btn secondary" href="#contact">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <h2>About Me</h2>
+        <p class="intro">
+          I am an undergraduate student building a foundation in biotechnology,
+          scientific thinking and digital skills. I am keen to learn through
+          academic projects, practical experiences and collaborative work.
+          My long-term interests include industrial biotechnology, research and
+          development, and quality control.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <h3>Education</h3>
+            <p><strong>BTech Biotechnology</strong><br>
+              Lovely Professional University<br>
+              <em>Currently pursuing · Update with your expected graduation year</em>
+            </p>
+          </article>
+          <article class="card">
+            <h3>Career Direction</h3>
+            <p>Exploring opportunities in industrial biotechnology, medicinal research
+              and development, and quality control, while continuing to strengthen
+              my laboratory, analytical and communication skills.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <h2>Skills & Interests</h2>
+        <p class="intro">A growing skill set that I will continue to develop throughout my degree.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Biotechnology & Research</h3>
+            <span class="tag">Biotechnology fundamentals</span>
+            <span class="tag">Scientific literature</span>
+            <span class="tag">Research awareness</span>
+            <span class="tag">Laboratory learning</span>
+          </article>
+          <article class="card">
+            <h3>Digital & Professional</h3>
+            <span class="tag">HTML / CSS — learning</span>
+            <span class="tag">GitHub — learning</span>
+            <span class="tag">Presentation skills</span>
+            <span class="tag">Team collaboration</span>
+          </article>
+        </div>
+        <p class="intro" style="margin-top:18px;font-size:.92rem">
+          Edit these tags so they accurately reflect your current knowledge. Label developing skills as “learning” rather than presenting them as advanced.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <h2>Projects & Academic Work</h2>
+        <p class="intro">Selected work demonstrating my interests and willingness to learn across science and technology.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>WeatherGPT — Weather & Disaster Intelligence</h3>
+            <p>A website concept focused on weather information, evacuation awareness and disaster-management information, with a map-based interface.</p>
+            <p><strong>My learning:</strong> Front-end structure, interface design and exploring how a database/backend could support an application.</p>
+            <span class="tag">Web development</span><span class="tag">Disaster awareness</span>
+            <p style="font-size:.9rem;margin-top:14px"><em>Add a repository or live-demo link when available.</em></p>
+          </article>
+          <article class="card">
+            <h3>Carbon Capture, Utilisation & Storage (CCUS)</h3>
+            <p>An academic exploration of how carbon dioxide can be captured, stored or used in products, and how biotechnology may contribute through microorganisms, algae and bio-based production.</p>
+            <p><strong>My learning:</strong> Connecting emerging technologies with sustainability and potential biotechnology applications.</p>
+            <span class="tag">Emerging technology</span><span class="tag">Sustainability</span>
+            <p style="font-size:.9rem;margin-top:14px"><em>Add your assignment or presentation link if you are allowed to share it.</em></p>
+          </article>
+          <article class="card">
+            <h3>Academic & Coursework Highlights</h3>
+            <p>Add relevant coursework, practical records, presentations or other assignments that demonstrate your learning.</p>
+            <span class="tag">Coursework</span><span class="tag">Scientific communication</span>
+          </article>
+          <article class="card">
+            <h3>Future Project Goals</h3>
+            <p>Develop a small biotechnology-focused research or data project and document the question, approach, findings and references.</p>
+            <span class="tag">Research development</span><span class="tag">Continuous learning</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="development">
+      <div class="wrap">
+        <h2>Professional Development</h2>
+        <p class="intro">A space to document experiences as I progress through university.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Certifications & Courses</h3>
+            <p>Add completed courses, certificates, issuing organisations and dates. Do not list a course as completed until you have finished it.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Leadership & Volunteering</h3>
+            <p>Add student responsibilities, club activities, volunteering or teamwork experiences, including your contribution.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Competitions, Research & Internships</h3>
+            <p>Add real participation, research experience, competitions or internships as you gain them. If you have none yet, it is fine to update this section later.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <h2>Let's Connect</h2>
+          <p>I am interested in learning from people working across biotechnology, scientific research and technology.</p>
+          <p>Email: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
+          <p>GitHub: <a href="https://github.com/YOUR_USERNAME">github.com/YOUR_USERNAME</a></p>
+          <p style="font-size:.9rem">Replace the example email and username above before publishing. Only include contact details you are comfortable sharing publicly.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Nandita Raveendran · Professional Portfolio · Built with HTML and CSS</div>
+  </footer>
+</body>
+</html>
